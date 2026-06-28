@@ -2,14 +2,43 @@ function Calendar() {
     return (
         <div className="calendar-containter">
             <div className="calendar">
-                <div className="week">
-                    <div>Sun</div>
-                    <div>Mon</div>
-                    <div>Tue</div>
-                    <div>Wed</div>
-                    <div>Thu</div>
-                    <div>Fri</div>
-                    <div>Sat</div>
+                <div className="week row">
+                    <div className="corner">
+                        <span>test</span>
+                    </div>
+                    <div>
+                        <span>Sun</span>
+                    </div>
+                    <div>
+                        <span>Mon</span>
+                    </div>
+                    <div>
+                        <span>Tue</span>
+                    </div>
+                    <div>
+                        <span>Wed</span>
+                    </div>
+                    <div>
+                        <span>Thu</span>
+                    </div>
+                    <div>
+                        <span>Fri</span>
+                    </div>
+                    <div>
+                        <span>Sat</span>
+                    </div>
+                </div>
+                <div>
+                    <div></div>
+                    <div>
+                        <div className="one"></div>
+                    </div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
                 </div>
             </div>
         </div>

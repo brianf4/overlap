@@ -1,3 +1,13 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Playpen Sans", "Comic Sans MS", cursive;
+}
+
 .calendar-containter {
     border: 2px solid red;
     padding: 15px;
@@ -8,10 +18,19 @@
 }
 
 .week {
-    display: flex;
-    justify-content: space-evenly;
 }
 
 .week div {
     border: 2px solid springgreen;
+    padding: 12px 0;
+    display: inline-block;
+    width: 14%;
+}
+
+.corner span {
+    visibility: hidden;
+}
+
+.week .corner {
+    width: 2%;
 }
