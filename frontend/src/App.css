@@ -14,30 +14,34 @@ html {
 }
 
 .calendar-containter {
-    border: 2px solid red;
+    border: 2px solid black;
     padding: 15px;
     height: 20%;
 }
 
-.calendar {
-    border: 2px solid black;
-}
+/*.calendar {
+    overflow-y: scroll;
+    scrollbar-gutter: stable;
+}*/
 
-.week {
+.row1 {
     display: flex;
     font-size: 20px;
     font-weight: 600;
+    overflow: hidden;
+    scrollbar-gutter: stable;
+    border-bottom: 1px solid black;
 }
 
 /*Can not just target .corner because of specificity*/
-.week .corner {
-    width: 25%;
+.row1 .corner {
+    flex: 0 0 52px;
 }
 
-.week div {
-    border: 2px solid springgreen;
+.row1 div {
+    border-left: 1px solid black;
     padding: 12px 0;
-    width: 100%;
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,22 +53,27 @@ html {
 
 .row2 {
     display: flex;
-    overflow: auto;
-    height: 80vh;
+    height: 80dvh;
+    overflow-y: scroll;
+    scrollbar-gutter: stable;
 }
 
 /*Can not just target .corner because of specificity*/
 .row2 .corner {
-    width: 25%;
+    border-left: 1px solid black;
+    flex: 0 0 52px;
 }
 
-.row2 div {
-    width: 100%;
+.row2 > div {
+    flex: 1;
 }
 
 .column div {
-    border: 2px solid black;
-    border-bottom: none;
-    border-right: none;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
     padding: 25px 0;
+}
+
+.column:first-child div {
+    border-left: none; /* remove left border from first column */
 }
