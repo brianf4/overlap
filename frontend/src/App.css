@@ -10,7 +10,9 @@ html {
 
 .topBarCalendar {
     border: 2px solid black;
-    padding: 20px 0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .calendar-containter {
@@ -18,11 +20,6 @@ html {
     padding: 15px;
     height: 20%;
 }
-
-/*.calendar {
-    overflow-y: scroll;
-    scrollbar-gutter: stable;
-}*/
 
 .row1 {
     display: flex;
