@@ -30,18 +30,20 @@ html {
     border-bottom: 1px solid black;
 }
 
-/*Can not just target .corner because of specificity*/
-.row1 .corner {
-    flex: 0 0 52px;
-}
-
 .row1 div {
     border-left: 1px solid black;
     padding: 12px 0;
-    flex: 1;
+    width: 100%;
+    /*Centering the days of the week text*/
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/*Can not just target .corner because of specificity*/
+/*38.969 x 30*/
+.row1 .corner {
+    width: 15%;
 }
 
 .corner span {
@@ -55,20 +57,26 @@ html {
     scrollbar-gutter: stable;
 }
 
-/*Can not just target .corner because of specificity*/
-.row2 .corner {
+.row2 > div {
+    width: 100%;
+    /*border-bottom: 1px solid black;*/
     border-left: 1px solid black;
-    flex: 0 0 52px;
+    padding: 25px 0;
 }
 
-.row2 > div {
-    flex: 1;
+.row2 .corner {
+    width: 15%;
+}
+
+.corner div {
+    /*border-left: 1px solid black;
+    border-bottom: 1px solid black;*/
 }
 
 .column div {
-    border-top: 1px solid black;
+    /*border-bottom: 1px solid black;
     border-left: 1px solid black;
-    padding: 25px 0;
+    padding: 25px 0;*/
 }
 
 .column:first-child div {

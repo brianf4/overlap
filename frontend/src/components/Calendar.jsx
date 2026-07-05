@@ -30,7 +30,11 @@ function Calendar() {
                 </div>
             </div>
             <div className="row2">
-                <div className="corner"></div>
+                <div className="corner">
+                    {arr.map((_, i) => {
+                        return <div key={i + 1}></div>;
+                    })}
+                </div>
                 <div className="column">
                     {arr.map((_, i) => {
                         return <div key={i + 1}></div>;
