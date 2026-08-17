@@ -24,6 +24,7 @@ html, body, #root {
 .calendar-containter {
     height: 100%;
     border: 2px solid limegreen;
+    padding: 15px;
 }
 
 .row1 {
