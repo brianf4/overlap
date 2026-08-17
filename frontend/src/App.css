@@ -8,7 +8,13 @@ html {
     font-family: "Playpen Sans", "Comic Sans MS", cursive;
 }
 
+html, body, #root {
+  height: 100%;
+}
+
+
 .topBarCalendar {
+    height: 5%;
     border: 2px solid black;
     padding: 20px;
     display: flex;
@@ -16,16 +22,15 @@ html {
 }
 
 .calendar-containter {
-    border: 2px solid black;
-    padding: 15px;
-    height: 20%;
+    height: 100%;
+    border: 2px solid limegreen;
 }
 
 .row1 {
+    height: 5%;
     display: flex;
     font-size: 20px;
     font-weight: 600;
-    overflow: hidden;
     scrollbar-gutter: stable;
     border-bottom: 1px solid black;
 }
@@ -40,10 +45,15 @@ html {
     align-items: center;
 }
 
+.row1 div:last-child {
+    border-right: 1px solid black;
+}
+
 /*Can not just target .corner because of specificity*/
 /*38.969 x 30*/
 .row1 .corner {
-    width: 15%;
+    width: 35%;
+    border: none;
 }
 
 .corner span {
@@ -51,33 +61,34 @@ html {
 }
 
 .row2 {
+    height: 90%;
     display: flex;
-    height: 80dvh;
-    overflow-y: scroll;
-    scrollbar-gutter: stable;
 }
 
 .row2 > div {
     width: 100%;
-    /*border-bottom: 1px solid black;*/
-    border-left: 1px solid black;
-    padding: 25px 0;
+    display: flex;
+    flex-direction: column;
+    /*padding: 25px 0;*/
 }
 
 .row2 .corner {
-    width: 15%;
+    width: 35%;
 }
 
-.corner div {
-    /*border-left: 1px solid black;
-    border-bottom: 1px solid black;*/
+.row2 .column:last-child {
+    border-right: 1px solid black;
 }
 
-.column div {
-    /*border-bottom: 1px solid black;
+.row2 .column div {
+    /*border: 1px solid black;*/
     border-left: 1px solid black;
-    padding: 25px 0;*/
+    border-bottom: 1px solid black;
+    height: 100%;
 }
+
+
+
 
 .column:first-child div {
     border-left: none; /* remove left border from first column */
